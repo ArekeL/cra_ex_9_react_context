@@ -1,7 +1,7 @@
 const AppFunComp = () => {
 	return (
-		<div>
-			<p>Fumction Component</p>
+		<div className='box'>
+			<h3>Fumction Component</h3>
 		</div>
 	);
 };

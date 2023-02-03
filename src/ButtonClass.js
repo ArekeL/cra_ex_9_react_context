@@ -3,14 +3,11 @@ import React, { PureComponent } from "react";
 import { AppClassContext } from "./AppClassContext";
 
 class ButtonClass extends PureComponent {
-	state = {};
+	static contextType = AppClassContext;
+
 	render() {
 		return (
-			<AppClassContext.Consumer>
-				{(props) => (
-					<button onClick={props.toggleLoggedState}>Switch Status</button>
-				)}
-			</AppClassContext.Consumer>
+			<button onClick={this.context.toggleLoggedState}>Switch Status</button>
 		);
 	}
 }

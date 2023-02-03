@@ -1,3 +1,27 @@
 .App {
 	text-align: center;
 }
+p {
+	font-size: 18px;
+}
+.box {
+	width: 65vw;
+	border: 2px solid black;
+	padding: 5px 10px 20px 10px;
+	margin: 5px auto 10px auto;
+}
+
+button {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-top: 12px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+button:hover {
+	background-color: white;
+	color: black;
+}

@@ -3,18 +3,15 @@ import React, { PureComponent } from "react";
 import { AppClassContext } from "./AppClassContext";
 
 class UserInfoClass extends PureComponent {
+	static contextType = AppClassContext;
+
 	render() {
+		const { isUserLogged } = this.context;
+		const userLoggedInfo = isUserLogged ? "Yes he is" : "No he is not";
 		return (
-			<AppClassContext.Consumer>
-				{(props) => (
-					<div>
-						<p>
-							Is user logged:{" "}
-							{props.isUserLogged ? "Yes he is" : "No he is not"}
-						</p>
-					</div>
-				)}
-			</AppClassContext.Consumer>
+			<div>
+				<p>Is user logged: {userLoggedInfo}</p>
+			</div>
 		);
 	}
 }

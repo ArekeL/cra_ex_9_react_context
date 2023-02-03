@@ -11,7 +11,8 @@ class AppClassComp extends PureComponent {
 	};
 	render() {
 		return (
-			<div>
+			<div className='box'>
+				<h3>Class components</h3>
 				<AppClassContext.Provider
 					value={{
 						isUserLogged: this.state.isUserLogged,
